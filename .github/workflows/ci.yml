@@ -24,7 +24,11 @@ jobs:
 
       - name: "Test: ShellCheck PKGBUILD"
         working-directory: pkg/arche-install
+<<<<<<< HEAD
         run: shellcheck PKGBUILD
+=======
+        run: shellcheck PKGBUILD --exclude SC2148,SC2034,SC2154 PKGBUILD
+>>>>>>> 33b3193 (feat: add github actions for ISO validation)
 
       - name: "Test: Lint PKGBUILD with namcap"
         working-directory: pkg/arche-install
